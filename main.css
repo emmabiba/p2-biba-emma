@@ -1,7 +1,7 @@
 * {
 	margin: 0;
-	padding: 0;
-	border: 0;
+    padding: 0;
+    border-style: none;
 }
 
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
@@ -185,8 +185,9 @@ div.hero-image {
   }
 
   div.accordion-content {
+    border: 1;
     border-style: solid;
-    border-color: #343434;
+    border-color: #666666;
   }
   
   .accordion-content.active {
@@ -196,6 +197,51 @@ div.hero-image {
   }
 
   /* Accordion End */
+
+  /* Contact Start */
+
+  div.contact-page p{
+      margin-top: 20px;
+  }
+
+  form input,
+  form label {
+      display: block;
+  }
+
+  form label {
+      margin-bottom: 10px;
+  }
+
+  form input {
+      margin-bottom: 20px;
+  }
+
+  form textarea {
+      width: 100%;
+      margin-bottom: 20px;
+      border: 1;
+      border-color: #666666;
+      border-style: solid;
+  }
+
+  form input {
+    border: 1;
+    border-color: #666666;
+    border-style: solid;
+    width: 100%;
+    padding: 10px;
+  }
+
+  input.submit {
+    border: 0;
+    background-color: #f64f1e;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  /* Contact Form End */
 
   /* Footer Start */
 

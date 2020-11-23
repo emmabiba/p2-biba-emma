@@ -17,31 +17,31 @@ toggleNav();
 
 //Accordion
 
-// Listen for click on the document
+// Event listener on accordion-toggle
 document.addEventListener('click', function (event) {
   
-    //Bail if our clicked element doesn't have the class
+    //Clicked element
     if (!event.target.classList.contains('accordion-toggle')) return;
     
-    // Get the target content
+    // Target content
     var content = document.querySelector(event.target.hash);
     if (!content) return;
     
-    // Prevent default link behavior
+    // Default link
     event.preventDefault();
     
-    // If the content is already expanded, collapse it and quit
+    // Collapse if expanded
     if (content.classList.contains('active')) {
       content.classList.remove('active');
       return;
     }
     
-    // Get all open accordion content, loop through it, and close it
+    // Get all open accordion content
     var accordions = document.querySelectorAll('.accordion-content.active');
     for (var i = 0; i < accordions.length; i++) {
       accordions[i].classList.remove('active');
     }
     
-    // Toggle our content
+    // Toggle content
     content.classList.toggle('active');
   })
