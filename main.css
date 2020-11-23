@@ -13,6 +13,25 @@ body, html {
     font-family: Tahoma, sans-serif, sans-serif;
 }
 
+h1,
+h2,
+h3 {
+    font-family: poster-gothic-excond-atf, sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
 /* Navigation Start */
 
 header {
@@ -173,6 +192,11 @@ div.hero-image {
   }
 
   /* About End */
+
+  /* Pop Up */
+
+
+  /* Pop Up */
 
   /* Accordion Start */
 
