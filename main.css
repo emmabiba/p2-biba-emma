@@ -163,7 +163,7 @@ div.hero-image {
   }
 
   .main img {
-      max-width: 100%;
+      max-width: 400px;
       padding: 10px 0;
   }
 
@@ -181,6 +181,13 @@ div.hero-image {
   .main h3 {
       color: #060e79;
       margin: 10px 0;
+  }
+
+  .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
 
 .center-images {
