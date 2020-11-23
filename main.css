@@ -183,6 +183,10 @@ div.hero-image {
       margin: 10px 0;
   }
 
+.center-images {
+    text-align: center;
+}
+
   /* Main End */
 
   /* About Start */
@@ -321,6 +325,18 @@ div.hero-image {
 
   /* Contact Form End */
 
+  /* API Style Start */
+
+  .weather-status {
+      width: 100%;
+  }
+
+  p#weather {
+      text-transform: uppercase;
+  }
+
+  /* API Style End */
+
   /* Footer Start */
 
 footer {
@@ -425,6 +441,10 @@ footer p {
     footer p{
         margin: 0;
         text-align: left;
+    }
+
+    main .widget-2 {
+        margin: 0;
     }
   
     .widget-2 {
