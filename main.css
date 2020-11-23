@@ -166,6 +166,37 @@ div.hero-image {
 
   /* Main End */
 
+  /* Accordion Start */
+
+  .accordion-toggle {
+    display: block;
+    background-color: #060e79;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  a.accordion-toggle {
+      color: white;
+      padding: 20px;
+  }
+  
+  .accordion-content {
+    display: none;
+  }
+
+  div.accordion-content {
+    border-style: solid;
+    border-color: #343434;
+  }
+  
+  .accordion-content.active {
+    display: block;
+    padding: 10px 20px 20px 20px;
+    
+  }
+
+  /* Accordion End */
+
   /* Footer Start */
 
 footer {
@@ -253,9 +284,10 @@ footer p {
   
      .item {
       display: flex;
+      flex-wrap: wrap;
       align-content: center;
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: center;
     }
 
     footer p{
