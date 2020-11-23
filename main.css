@@ -1,0 +1,283 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+body, html {
+    height: 100%;
+    font-family: Tahoma, sans-serif, sans-serif;
+}
+
+/* Navigation Start */
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2B4187;
+    color: #fff;
+}
+
+.logo {
+    font-family: poster-gothic-excond-atf, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.6em;
+    margin-left: 40px;
+}
+
+.navlink a.active {
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+}
+
+nav {
+    margin-right: 40px;
+}
+
+nav .navlink{
+    display: inline;
+}
+
+.navlink,
+.calltoaction {
+    list-style: none;
+    padding-left: 15px;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.navlink a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.navlink a:hover {
+    text-decoration: underline;
+}
+
+.calltoaction {
+    background-color: #f64f1e;
+}
+
+a.calltoaction {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+}
+
+a.calltoaction:hover {
+    text-decoration: none;
+}
+
+.nav li {
+    list-style: none;
+    margin: 0;
+}
+
+/* Navigation End */
+
+/* Hero Image Start */
+
+div.hero-image {
+    margin-top: 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/basketball-players.jpg");
+    background-color: #000;
+    height: 86vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  div.hero-text {
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+  }
+
+  /* Hero Image End */
+
+  /* Banner Start */
+
+  .banner-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/basketball-players.jpg");
+    background-color: #000;
+    height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    text-align: center;
+    color: white;
+  }
+
+  /* Banner End */
+
+  /* Main Start */
+
+  .main {
+      padding: 5%;
+  }
+
+  .main img {
+      max-width: 100%;
+      padding: 10px 0;
+  }
+
+  .main h2 {
+      color: #f64f1e;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+
+  .main p {
+      margin-bottom: 40px;
+  }
+
+  .main h3 {
+      color: #060e79;
+      margin: 10px 0;
+  }
+
+  /* Main End */
+
+  /* Footer Start */
+
+footer {
+    background-color: #6189B9;
+    padding: 5%;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+  footer ul {
+    list-style: none;
+}
+
+footer ul li{
+    display: inline;
+    padding: 20px;
+}
+footer p {
+    margin-bottom: 30px;
+}
+
+
+
+  /* Footer End */
+
+  /* Media Queries Start */
+
+@media screen and (max-width: 750px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav {
+        display: flex;
+        margin: 0;
+        background: #343434;
+        position: absolute;
+        right: -70%;
+        top: 70px;
+        width: 70%;
+        height: 86vh;
+        margin-top: 30px;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+        z-index: 100;
+        overflow: hidden;
+        display: none;
+    }
+    .navlink {
+        text-align: center;
+    }
+    .calltoaction {
+        text-align: center;
+    }
+    .nav-active {
+        right: 0%;
+        display: flex;
+    }
+    .hamburger i {
+        margin-right: 40px;
+    }
+    
+}
+
+@media screen and (min-width: 830px) {
+
+    .main {
+        padding: 2%;
+    }
+
+    main .container {
+        width: 800px;
+        margin: 0 auto;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+    }
+  
+     .item {
+      display: flex;
+      align-content: center;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    footer p{
+        margin: 0;
+        text-align: left;
+    }
+  
+    .widget-2 {
+      margin-left: 40px;
+    }
+
+    footer ul li {
+        display: inline;
+        margin-left: 40px;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .main {
+        padding: 0;
+    }
+
+}
