@@ -3,3 +3,6 @@ Outside Sources:
 
 Reference for Modal Pop Up
 https://w3bits.com/javascript-modal/
+
+Issues:
+Pop-Up was difficult to wrap my head around without a reference.
