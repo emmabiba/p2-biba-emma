@@ -166,12 +166,20 @@ div.hero-image {
 
   /* Main End */
 
+  /* About Start */
+
+  .logo-badge {
+      margin-bottom: 20px;
+  }
+
+  /* About End */
+
   /* Accordion Start */
 
   .accordion-toggle {
     display: block;
     background-color: #060e79;
-    width: 100%;
+    width: 95%;
     margin-bottom: 10px;
   }
 
@@ -185,7 +193,8 @@ div.hero-image {
   }
 
   div.accordion-content {
-    border: 1;
+    width: 95%;
+    border: 1px;
     border-style: solid;
     border-color: #666666;
   }
@@ -193,7 +202,7 @@ div.hero-image {
   .accordion-content.active {
     display: block;
     padding: 10px 20px 20px 20px;
-    
+    margin-bottom: 10px;
   }
 
   /* Accordion End */
@@ -218,15 +227,16 @@ div.hero-image {
   }
 
   form textarea {
+      padding: 10px;
       width: 100%;
       margin-bottom: 20px;
-      border: 1;
+      border: 1px;
       border-color: #666666;
       border-style: solid;
   }
 
   form input {
-    border: 1;
+    border: 1px;
     border-color: #666666;
     border-style: solid;
     width: 100%;
@@ -239,7 +249,12 @@ div.hero-image {
     color: white;
     font-weight: 600;
     text-transform: uppercase;
+    padding: 15px;
   }
+
+  main form {
+    text-align: left;
+}
 
   /* Contact Form End */
 
@@ -306,6 +321,14 @@ footer p {
     .hamburger i {
         margin-right: 40px;
     }
+
+    .main {
+        text-align: center;
+    }
+
+    .main p {
+        text-align: left;
+    }
     
 }
 
@@ -317,7 +340,7 @@ footer p {
 
     main .container {
         width: 800px;
-        margin: 0 auto;
+        margin: 30px auto;
     }
     
     .container {
@@ -349,6 +372,14 @@ footer p {
         display: inline;
         margin-left: 40px;
         padding: 0;
+    }
+
+    .center-images {
+        text-align: center;
+    }
+
+    main form {
+        text-align: left;
     }
 }
 
